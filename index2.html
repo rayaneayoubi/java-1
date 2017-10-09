@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<head>
+	<title></title>
+	<
+</head>
+<body>
+	<script type="text/javascript">
+		    var admis=true;
+		    var moyenne= moyenne;
+   var etudiants =[{
+                    nom:'pierre',
+                    moyenne:'15',
+                    admis:'true'
+
+                     },
+                       {
+                     	nom:'paul',
+                     	moyenne:'10',
+                     	admis:'true'
+
+                     }
+                     ,
+                     {
+                     	nom:'Jacques',
+                     	moyenne:'8',
+                     	admis:'false'
+                     }, 
+                       {
+                     	nom:'manon',
+                     	moyenne:'5',
+                     	admis:'false'
+
+                     }
+                  ];
+    console.log(etudiants);
+    console.log(etudiants[0]);
+     console.log(etudiants[1]);
+      console.log(etudiants[2]);
+       console.log(etudiants[3]);
+  for(i=0; i<etudiants.length ; i++)
+  { var etudiant= etudiants[i]
+  	if(etudiant.moyenne>=10 && admis){
+  		console.log(etudiant.nom + ' est admis ' + ' avec ' + etudiant.moyenne + ' de moyenne ');
+  	}
+  	else {
+  		console.log(etudiant.nom+' est non admis ');
+
+
+
+  		  	}
+  }
+  var questions =[
+               {  ques: 'Est-ce que tu aime le javascript?',
+               ans: 'oui'
+
+               },
+               {
+               	ques:' le javascript est une evolution du java?',
+               	ans:'non'
+               },
+               {
+               	ques:' le javascript est proche du java?',
+               	ans:'non'
+               },
+               {
+               	ques:'le javascript est un langage d\'objet par prototypage?',
+               	ans:'oui'
+               },
+               {
+               	ques:'le javascript est souvent utilise cote client?',
+               	ans:'oui'
+               },
+               {
+               	ques:' le javascript peut etre utilise cote client et serveur?',
+               	ans:'oui'
+               }
+               ];
+               for (var i=0; i<questions.length;i++)
+               {
+               
+               	if( prompt (questions[i].ques)\\afficher la question \\.toLowerCase() ===\\comparaison \\ questions[i].ans.toLowerCase())
+               	{
+                       console.log(' Bonne reponse pour la question ' + questions[i].ques);
+
+
+
+
+               	} 
+               	else {
+               		console.log( ' faux la bonne reponse a votre question etait ' + questions[i].ans);
+               	}
+               }
+
+
+
+  </script>
+
+</body>
+</html>
